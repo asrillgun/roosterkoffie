@@ -325,7 +325,7 @@ body {
 
 .banner-cta {
     display: inline-block;
-    margin-top: 5px; /* Add margin to create space between text and button */
+    margin-top: auto; /* Add margin to create space between text and button */
     padding: 10px 20px; /* Adjust padding for button size */
     background-color: #a52a2a; /* Button background color */
     color: white; /* Button text color */
