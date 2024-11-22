@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
@@ -5,6 +6,7 @@ body {
     color: #333;
 }
 
+/* Header and Navigation */
 .navbar {
     background-color: #b71c1c;
     color: #fff;
@@ -14,13 +16,23 @@ body {
     padding: 10px 20px;
 }
 
-.navbar .logo {
+.logo {
+    display: flex;
+    align-items: center;
     font-size: 24px;
     font-weight: bold;
+    gap: 10px;
 }
 
-.navbar .logo span {
+.logo span {
     color: #ffccbc;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 50%; /* Circular logo design */
 }
 
 .nav-links {
@@ -35,39 +47,327 @@ body {
     font-weight: bold;
 }
 
-.hero {
-    background-color: #ffebee;
-    text-align: center;
-    padding: 100px 20px;
-    color: #b71c1c;
+.nav-links li a:hover {
+    text-decoration: underline;
 }
 
-.hero .cta {
-    padding: 10px 20px;
-    background-color: #b71c1c;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
+/* Section Styles */
 .section {
     padding: 50px 20px;
     text-align: center;
 }
 
+.section h2 {
+    color: #b71c1c;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Menu Section */
 .menu-items {
     display: flex;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
+}
+
+.menu-category {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #b71c1c;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
 .menu-category h3 {
     color: #b71c1c;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
+.menu-category p {
+    color: #333;
+    margin: 5px 0;
+}
+
+/* Gallery Section */
+#gallery {
+    background-color: #ffebee;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    width: 300px;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #b71c1c;
+}
+
+/* Social Media Section */
+#social-media {
+    background-color: #fff5f5;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#social-media h2 {
+    color: #b71c1c;
+    margin-bottom: 10px;
+}
+
+#social-media p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #b71c1c;
+    font-size: 18px;
+    font-weight: bold;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-link img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-link img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+.social-link span {
+    font-size: 18px;
+    color: #b71c1c;
+    font-weight: bold;
+}
+
+/* Footer */
 .footer {
     background-color: #b71c1c;
     color: #fff;
     text-align: center;
     padding: 20px 0;
+}
+
+/* Map Section */
+#map {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    margin: auto;
+    background-color: #fce4ec;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    line-height: 300px;
+    color: #b71c1c;
+    font-size: 18px;
+}
+
+/* Careers Page */
+.careers-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.career-item {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #b71c1c;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.career-item h3 {
+    color: #b71c1c;
+    margin-bottom: 10px;
+}
+
+.career-item p {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.career-item button {
+    background-color: #b71c1c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.career-item button:hover {
+    background-color: #a31515;
+}
+
+/* Contact Page */
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    color: #b71c1c;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b71c1c;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #b71c1c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #a31515;
+}
+
+/* Banner Section */
+.banner {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.banner-text h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.banner-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.banner-cta {
+    padding: 10px 20px;
+    background-color: #b71c1c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.banner-cta:hover {
+    background-color: #ffccbc;
+}
+
+.location-details {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+
+.location-details h2 {
+    color: #b71c1c;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#map {
+    margin: 20px auto;
+    border: 2px solid #b71c1c;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 90%;
+    max-width: 400px;
+}
+
+.map-link {
+    color: #b71c1c;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    transition: color 0.3s ease;
+}
+
+.map-link:hover {
+    color: #ffccbc;
 }
