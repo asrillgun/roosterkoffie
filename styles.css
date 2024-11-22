@@ -297,7 +297,7 @@ body {
 }
 
 .banner-img {
-    width: 10%;
+    width: auto;
     height: auto;
     object-fit: cover;
     filter: brightness(70%);
