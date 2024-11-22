@@ -297,8 +297,8 @@ body {
 }
 
 .banner-img {
-    width: 100%;
-    height: 50%;
+    width: auto;
+    height: auto;
     object-fit: cover;
     filter: brightness(70%);
 }
@@ -323,18 +323,19 @@ body {
     margin-bottom: 20px;
 }
 
+
+.banner-cta:hover {
+    background-color: #ffccbc;
+}
+
 .banner-cta {
     display: inline-block;
-    margin-top: auto; /* Add margin to create space between text and button */
+    margin: top 0 px; /* Add margin to create space between text and button */
     padding: 10px 20px; /* Adjust padding for button size */
     background-color: #a52a2a; /* Button background color */
     color: white; /* Button text color */
     text-decoration: none;
     border-radius: 5px; /* Rounded corners for the button */
-}
-
-.banner-cta:hover {
-    background-color: #ffccbc;
 }
 
 .location-details {
