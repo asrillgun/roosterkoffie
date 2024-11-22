@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header class="navbar">
         <div class="logo">
             <img src="./Logo/logo.jpg" alt="RoosterKoffie Logo" class="logo-img">
@@ -16,7 +17,7 @@
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
-                <li><a href="locations.html">Locations</a></li>
+                <li><a href="locations.html" class="active">Locations</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="careers.html">Careers</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -24,18 +25,33 @@
         </nav>
     </header>
 
+    <!-- Main Content -->
     <main>
         <section id="locations" class="section">
             <h1>Our Locations</h1>
             <p>Come visit us at any of our convenient locations. We’d love to serve you the perfect cup of coffee!</p>
 
+            <!-- Google Maps Embed -->
             <div id="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15928.105305572173!2d98.6424348!3d3.5814268!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30312e34b7d117d9%3A0x448da92d3c3d0051!2sRooster%20Koffie!5e0!3m2!1sen!2smy!4v1732259014769!5m2!1sen!2smy" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15928.105305572173!2d98.6424348!3d3.5814268!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30312e34b7d117d9%3A0x448da92d3c3d0051!2sRooster%20Koffie!5e0!3m2!1sen!2smy!4v1732259014769!5m2!1sen!2smy" 
+                    width="600" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
 
-            <p><a href="https://maps.app.goo.gl/3BpJyHVqhQ1PuWYo9" target="_blank" class="map-link">Get Directions on Google Maps</a></p>
+            <!-- Directions Link -->
+            <p>
+                <a href="https://maps.app.goo.gl/3BpJyHVqhQ1PuWYo9" target="_blank" class="map-link">
+                    Get Directions on Google Maps
+                </a>
+            </p>
 
+            <!-- Location Details -->
             <div class="location-details">
                 <h2>RoosterKoffie</h2>
                 <p>Jl. Laksana</p>
@@ -44,6 +60,7 @@
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
         <p>&copy; 2024 RoosterKoffie. All rights reserved.</p>
     </footer>
