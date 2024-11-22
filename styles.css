@@ -324,13 +324,13 @@ body {
 }
 
 .banner-cta {
-    padding: 10px 20px;
-    background-color: #b71c1c;
-    color: #fff;
+    display: inline-block;
+    margin-top: 20px; /* Add margin to create space between text and button */
+    padding: 10px 20px; /* Adjust padding for button size */
+    background-color: #a52a2a; /* Button background color */
+    color: white; /* Button text color */
     text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+    border-radius: 5px; /* Rounded corners for the button */
 }
 
 .banner-cta:hover {
